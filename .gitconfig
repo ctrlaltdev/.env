@@ -1,0 +1,14 @@
+[commit]
+        gpgsign = true
+[gpg]
+        program = gpg2
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        interactive = auto
+        ui = true
+        pager = true
+[alias]
+        st = !git --no-pager diff HEAD --name-status --diff-filter=ACDMRTUXB | sed 's|\t| |' | sort -k 1 | sed 's|^\\(.\\) *|\\1      |'
+        sta = "!{ git ls-files -o --directory -t ; git --no-pager diff HEAD --name-status --diff-filter=ACDMRTUXB | sed 's|\t| |' ; } | sort -k 1 | sed 's|^\\(.\\) *|\\1      |'"

@@ -1,0 +1,7 @@
+{
+    "workbench.startupEditor": "none",
+    "editor.cursorBlinking": "phase",
+    "editor.wordWrap": "on",
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false
+}

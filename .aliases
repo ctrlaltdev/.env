@@ -1,0 +1,43 @@
+# ~/.aliases
+
+alias ls='ls --color=auto'
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
+
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+alias ll='ls -l'
+alias la='ls -la'
+alias l='ls -ahls'
+
+alias cd..='cd ..'
+alias c='clear'
+alias r='reset'
+
+alias reload='. ~/.zshrc'
+
+alias vi='nvim'
+alias vim='nvim'
+alias sqlite='sqlite3'
+alias gpg='gpg2'
+
+alias shred='shred -zf'
+alias curl='curl --user-agent 'noleak''
+alias wget='wget -c --user-agent 'noleak''
+alias www='python -m SimpleHTTPServer'
+
+alias battery_status='upower -i /org/freedesktop/UPower/devices/battery_BAT0'
+alias xcopy='xclip -selection clipboard -i'
+
+alias syslog='sudo tail -100f /var/log/syslog'
+alias messages='sudo tail -100f /var/log/messages'
+alias authlog='sudo tail -100f /var/log/auth.log'
+
+alias god='sudo -i'
+alias root='sudo -i'
+
+alias more='less'
+
+alias nano='echo VI OR DIE'
