@@ -40,8 +40,4 @@ RPROMPT='%F{yellow}%~%f'
 
 export PATH=$PATH:$HOME/.local/bin
 
-if [ -f $(brew --prefix nvm)/nvm.sh ]; then
-    source $(brew --prefix nvm)/nvm.sh
-fi
-
 eval $(thefuck --alias)
