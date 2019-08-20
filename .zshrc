@@ -1,5 +1,5 @@
 if [ -f ~/.randomHeader.sh ]; then
-    . ~/.randomHeader.sh
+    source ~/.randomHeader.sh
 fi
 
 echo ""
@@ -23,10 +23,13 @@ plugins=(git z sudo vscode yarn)
 
 source $ZSH/oh-my-zsh.sh
 
+bindkey "^[[1;5C" forward-word  
+bindkey "^[[1;5D" backward-word
+
 # export LANG=en_US.UTF-8
 
 if [ -f ~/.aliases ]; then
-    . ~/.aliases
+    source ~/.aliases
 fi
 
 export EDITOR='nvim'
@@ -38,7 +41,7 @@ RPROMPT='%F{yellow}%~%f'
 export PATH=$PATH:$HOME/.local/bin
 
 if [ -f $(brew --prefix nvm)/nvm.sh ]; then
-    . $(brew --prefix nvm)/nvm.sh
+    source $(brew --prefix nvm)/nvm.sh
 fi
 
 eval $(thefuck --alias)
