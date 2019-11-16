@@ -1,9 +1,5 @@
-if [ -f ~/.randomHeader.sh ]; then
-    source ~/.randomHeader.sh
-fi
-
 echo ""
-randomHeader
+dd if=/dev/urandom bs=24 count=1 2> /dev/null| xxd -u -p
 echo ""
 
 fortune

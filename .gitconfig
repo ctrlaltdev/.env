@@ -10,5 +10,6 @@
         ui = true
         pager = true
 [alias]
+        fp = !git fetch -p && git pull
         st = !git --no-pager diff HEAD --name-status --diff-filter=ACDMRTUXB | sed 's|\t| |' | sort -k 1 | sed 's|^\\(.\\) *|\\1      |'
         sta = "!{ git ls-files -o --directory -t ; git --no-pager diff HEAD --name-status --diff-filter=ACDMRTUXB | sed 's|\t| |' ; } | sort -k 1 | sed 's|^\\(.\\) *|\\1      |'"

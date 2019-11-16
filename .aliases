@@ -14,7 +14,7 @@ alias l='ls -ahls'
 
 alias cd..='cd ..'
 alias c='clear'
-alias r='reset'
+# alias r='reset'
 
 alias reload='. ~/.zshrc'
 
