@@ -22,11 +22,17 @@ alias vi='nvim'
 alias vim='nvim'
 alias sqlite='sqlite3'
 alias gpg='gpg2'
+alias python='python3'
+alias pip='pip3'
+
+alias tf='terragrunt'
+alias tg='terragrunt'
 
 alias shred='shred -zf'
 alias curl='curl --user-agent 'noleak''
 alias wget='wget -c --user-agent 'noleak''
 alias www='python -m SimpleHTTPServer'
+alias dig='dig +short'
 
 alias battery_status='upower -i /org/freedesktop/UPower/devices/battery_BAT0'
 alias xcopy='xclip -selection clipboard -i'

@@ -1,0 +1,19 @@
+# Add Local Bin
+export PATH=$PATH:$HOME/.local/bin
+export PATH=/usr/local/sbin:$PATH
+
+# TFENV / TGENV
+export PATH=$HOME/.tfenv/bin:$HOME/.tgenv/bin:$PATH
+
+# GOLANG
+export GOPATH=$HOME/.go
+export GOENV_ROOT=$HOME/.goenv
+export PATH=$GOENV_ROOT/bin:$PATH
+
+# NODE
+export N_PREFIX=$HOME/.n
+export PATH=$N_PREFIX/bin:$PATH
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+
+# OPENSSL
+export PATH="/usr/local/opt/openssl/bin:$PATH"

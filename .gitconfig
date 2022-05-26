@@ -1,15 +1,26 @@
-[commit]
-        gpgsign = true
+[user]
+	name = Yorick Demichelis
+	email = yorick@techholding.co
+	gpgsign = true
+	signingkey = 541BD8D67B4661D460BA351A01A75050C4CAA5DB
 [gpg]
-        program = gpg2
+	program = gpg2
 [color]
-        diff = auto
-        status = auto
-        branch = auto
-        interactive = auto
-        ui = true
-        pager = true
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = true
+	pager = true
 [alias]
-        fp = !git fetch -p && git pull
-        st = !git --no-pager diff HEAD --name-status --diff-filter=ACDMRTUXB | sed 's|\t| |' | sort -k 1 | sed 's|^\\(.\\) *|\\1      |'
+	fp = !git fetch -p && git pull
+	fpc = !git fetch -p && git pull && git-cleanup
+	cleanup = !git-cleanup
+	laser = !git-laser
+	cp = !git cherry-pick
+	st = !git --no-pager diff HEAD --name-status --diff-filter=ACDMRTUXB | sed 's|\t| |' | sort -k 1 | sed 's|^\\(.\\) *|\\1      |'
         sta = "!{ git ls-files -o --directory -t ; git --no-pager diff HEAD --name-status --diff-filter=ACDMRTUXB | sed 's|\t| |' ; } | sort -k 1 | sed 's|^\\(.\\) *|\\1      |'"
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
